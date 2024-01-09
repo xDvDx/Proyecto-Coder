@@ -1,0 +1,85 @@
+/* Pagina Contacto */
+
+.wrapper-contact {
+    background-color: rgb(246, 162, 191, 30%);
+}
+
+.contactanos {
+    padding: 1rem;
+    width: 80%;
+    margin: 3rem auto;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    gap: 1rem;
+}
+
+.wrapper-input,
+.wrapper-textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+
+    .form-index {
+        padding: 0 1rem 0 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-content: center;
+    }
+
+    .form-index h2 {
+        grid-column: span 2;
+    }
+
+    .wrapper-textarea {
+        grid-column: span 2;
+    }
+
+    .wrapper-textarea textarea {
+        width: 100%;
+    }
+
+    .wrapper-input input {
+        width: 100%;
+    }
+
+    .wrapper-input,
+    .wrapper-textarea {
+        align-items: start;
+        gap: 0.5rem;
+    }
+}
+
+.wrapper-sucursal {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    gap: 1rem;
+}
+
+.wrapper-sucursal div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+}
+
+@media (min-width: 768px) {
+
+    .wrapper-sucursal {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        justify-items: center;
+    }
+
+    .wrapper-sucursal div {
+        align-items: start;
+    }
+}

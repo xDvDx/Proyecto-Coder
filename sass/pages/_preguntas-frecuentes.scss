@@ -1,0 +1,33 @@
+/* Pagina Preguntas Frecuentes */
+
+.title-preg {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    color: black;
+}
+
+.title-preg h4 {
+    padding-left: 4rem;
+    font-size: 1.5rem;
+}
+
+.title-preg a {
+    color: black;
+}
+
+.cont-preguntas {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+}
+
+.cont-preguntas h3 {
+    font-size: 1.5rem;
+    color: $color-base
+}
+
+.cont-preguntas p {
+    padding-left: 2rem;
+    color: black;
+}

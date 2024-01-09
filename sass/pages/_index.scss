@@ -1,0 +1,160 @@
+/* Index */
+
+/* Portada Index */
+
+.box-img {
+    height: 60vh;
+    width: 100%;
+}
+
+.wrapper-info {
+    background-color: rgb(246, 162, 191, 30%);
+}
+
+.informacion ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 16px;
+}
+
+.informacion li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    padding: 16px;
+}
+
+.destacados h2 {
+    color: black;
+    text-align: center;
+    padding: 16px;
+}
+
+.destacados span {
+    font-size: 2rem;
+}
+
+/* Tarjeta de productos */
+
+.tarjeta {
+    border: 2px solid black;
+    width: 250px;
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    flex-basis: 150px;
+    flex-shrink: 0;
+}
+
+.tarjeta img {
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
+.tarjeta h3 {
+    font-size: 100%;
+    text-align: center;
+}
+
+.tarjeta-cuerpo {
+    border-top: 2px solid black;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.tarjeta-cuerpo a {
+    background-color: $color-base;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
+/* Carrusel Tarjetas */
+
+.carrusel-destacados {
+    gap: 16px;
+    padding: 16px;
+    align-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    overflow: auto;
+}
+
+/* Productos-Index*/
+
+.img-prod {
+    border-radius: 16px
+}
+
+.normal-article {
+
+    background-color: rgb(246, 162, 191, 30%);
+    border-radius: 16px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+}
+
+.normal-article div {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.diff-article {
+    background-color: rgb(246, 162, 191, 30%);
+    border-radius: 16px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+}
+
+.diff-article div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.separar-productos {
+    padding: 2rem 6rem
+}
+
+@media (min-width: 768px) {
+
+    .normal-article {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        align-items: center;
+    }
+
+    .normal-article div {
+        align-items: center;
+    }
+
+    .diff-article {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        align-items: center;
+    }
+
+    .diff-article div {
+        align-items: center;
+    }
+}
+

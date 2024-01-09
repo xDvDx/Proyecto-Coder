@@ -1,0 +1,22 @@
+$ff-text-primary: "Amiko", sans-serif;
+$color-base: #f6a2bf;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $ff-text-primary;
+}
+
+a {
+    text-decoration-style: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}

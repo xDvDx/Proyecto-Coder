@@ -1,0 +1,39 @@
+/* Tarjeta de productos */
+
+.tarjeta {
+    border: 2px solid black;
+    width: 250px;
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    flex-basis: 150px;
+    flex-shrink: 0;
+}
+
+.tarjeta img {
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
+.tarjeta h3 {
+    font-size: 100%;
+    text-align: center;
+}
+
+.tarjeta-cuerpo {
+    border-top: 2px solid black;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.tarjeta-cuerpo a {
+    background-color: #f6a2bf;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 10px;
+}

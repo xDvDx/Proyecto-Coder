@@ -1,0 +1,70 @@
+/* Pagina Quienes Somos */
+
+.background-qs {
+    background-image: url(../img-originales/pexels-india.jpg);
+    background-position: center;
+    color: aliceblue;
+}
+
+.wrapper-qs img {
+    border-radius: 16px
+}
+
+.normal-qs {
+
+    background-color: rgb(0, 0, 0, 50%);
+    border-radius: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+}
+
+.normal-qs div {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.diff-qs {
+    background-color: rgb(0, 0, 0, 50%);
+    border-radius: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+}
+
+.diff-qs div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+@media (min-width: 768px) {
+
+    .normal-qs {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        align-items: center;
+    }
+
+    .normal-qs div {
+        align-items: center;
+    }
+
+    .diff-qs {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        align-items: center;
+    }
+
+    .diff-qs div {
+        align-items: center;
+    }
+}

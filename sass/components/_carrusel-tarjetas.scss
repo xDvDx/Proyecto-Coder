@@ -1,0 +1,12 @@
+/* Carrusel Tarjetas */
+
+.carrusel-destacados {
+    gap: 16px;
+    padding: 16px;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    overflow: auto;
+}

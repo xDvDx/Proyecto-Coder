@@ -34,6 +34,7 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   padding: 16px;
+  text-align: center;
 }
 
 .informacion li {
@@ -44,6 +45,22 @@ img {
   padding: 16px;
 }
 
+@media (max-width: 768px) {
+  .informacion ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    padding: 8px;
+  }
+  .informacion h3 {
+    font-size: 14px;
+    text-align: center;
+  }
+  .informacion h6 {
+    font-size: 12px;
+    text-align: center;
+  }
+}
 .destacados h2 {
   color: black;
   text-align: center;
@@ -94,8 +111,8 @@ img {
 .carrusel-destacados {
   gap: 16px;
   padding: 16px;
-  align-content: center;
   display: flex;
+  align-content: center;
   flex-wrap: nowrap;
   justify-content: center;
   overflow: auto;
@@ -167,7 +184,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     align-items: center;
-    width: 400px;
+    width: 360px;
   }
   .normal-article div {
     align-items: center;
@@ -180,7 +197,7 @@ img {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     align-items: center;
-    width: 400px;
+    width: 360px;
   }
   .diff-article div {
     align-items: center;
@@ -190,7 +207,8 @@ img {
     font-size: 12px;
   }
   .separar-productos {
-    padding: 1rem 3rem;
+    display: grid;
+    justify-content: center;
   }
 }
 /* Pagina Quienes Somos */
@@ -313,24 +331,21 @@ img {
 }
 .wrapper-sucursal {
   padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
   gap: 1rem;
 }
 
 .wrapper-sucursal div {
   display: flex;
   flex-direction: column;
-  align-items: start;
   gap: 16px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .wrapper-sucursal {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
   }
   .wrapper-sucursal div {
     align-items: start;
@@ -386,6 +401,8 @@ img {
 
 .subtitle-productos span {
   font-size: 2rem;
+  background-color: rgba(246, 162, 191, 0.3);
+  border-radius: 16px;
 }
 
 .categorias {
@@ -403,10 +420,11 @@ img {
   color: black;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
   .cont-categorias {
-    max-width: 200px;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .categorias h4 {
     font-size: 16px;
@@ -433,7 +451,7 @@ img {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  overflow: auto;
+  overflow: scroll;
 }
 
 .tarjeta h3 {

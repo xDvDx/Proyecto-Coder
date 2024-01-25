@@ -23,6 +23,7 @@ img {
 .box-img {
   height: 60vh;
   width: 100%;
+  object-fit: cover;
 }
 
 .wrapper-info {
@@ -118,7 +119,7 @@ img {
   overflow: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   .tarjeta {
     width: 100px;
   }
@@ -468,6 +469,16 @@ img {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .tarjeta {
+    width: 100px;
+  }
+  .productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 /* Footer */
 footer {
   background-color: rgba(246, 162, 191, 0.3);

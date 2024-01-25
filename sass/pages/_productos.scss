@@ -78,3 +78,16 @@
 .tarjeta h3 {
     text-align: center;
 }
+
+@media (max-width:768px) {
+
+    .tarjeta {
+        width: 100px;
+    }
+
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

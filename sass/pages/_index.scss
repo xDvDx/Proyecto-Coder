@@ -110,6 +110,19 @@
     overflow: auto;
 }
 
+@media (max-width:768px) {
+
+    .tarjeta {
+        width: 100px;
+    }
+
+    .carrusel-destacados {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 /* Productos-Index*/
 
 .img-prod {
